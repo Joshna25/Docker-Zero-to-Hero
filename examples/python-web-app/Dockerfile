@@ -20,7 +20,7 @@ RUN apt-get update && \
 RUN python3 -m venv /app/venv && \
     /app/venv/bin/pip install --no-cache-dir -r requirements.txt && \
     cd devops
-#COPY devops/app .
+##COPY devops/app .
 
 ENV PATH ="/app/venv/bin:$PATH"
    
